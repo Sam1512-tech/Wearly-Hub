@@ -20,7 +20,7 @@ function App() {
   return (
     <CartProvider>
       <Routes>
-        {/* Routes with regular Navbar */}
+       
         <Route path="/*" element={
           <>
             <Navbar />
@@ -50,7 +50,7 @@ function App() {
           </>
         } />
 
-        {/* Auth routes with Navbar hiding cart icon */}
+        
         <Route path="/login" element={
           <>
             <Navbar hideCartIcon />
