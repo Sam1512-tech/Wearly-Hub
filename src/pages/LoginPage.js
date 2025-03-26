@@ -16,7 +16,7 @@ import {
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../utils/firebase';
 import { useNavigate } from 'react-router-dom';
-import LoginImage from '../assets/login-hero.avif'; // You'll need to add this image
+import LoginImage from '../assets/login-hero.avif'; 
 
 function LoginPage() {
   const [email, setEmail] = useState('');
@@ -84,7 +84,7 @@ function LoginPage() {
             </Box>
           </Grid>
 
-          {/* Form Section */}
+          
           <Grid item xs={12} md={6}>
             <Box sx={{ p: { xs: 3, md: 6 } }}>
               <Typography variant="h4" sx={{ fontWeight: 600, mb: 1 }}>
