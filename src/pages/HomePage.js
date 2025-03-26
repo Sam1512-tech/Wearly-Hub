@@ -59,7 +59,7 @@ function HomePage() {
         product.price >= priceRange[0] && product.price <= priceRange[1]
     );
 
-    // Sort products
+    
     switch (sortOption) {
       case 'price-low':
         result.sort((a, b) => a.price - b.price);
@@ -71,7 +71,7 @@ function HomePage() {
         result.sort((a, b) => b.rating.rate - a.rating.rate);
         break;
       default:
-        // Default sorting (no change)
+       
         break;
     }
 
@@ -102,7 +102,7 @@ function HomePage() {
 
   return (
     <Container maxWidth="xl" sx={{ py: 4 }}>
-      {/* Hero Section - Fixed styling */}
+     
       <Paper
         elevation={0}
         sx={{
@@ -111,8 +111,8 @@ function HomePage() {
           borderRadius: 4,
           background: 'linear-gradient(135deg, rgba(191,78,48,0.1) 0%, rgba(91,140,90,0.1) 100%)',
           textAlign: 'center',
-          backgroundColor: '#F8F4E9', // Light beige background
-          color: '#2C2C2C', // Dark text
+          backgroundColor: '#F8F4E9', 
+          color: '#2C2C2C', 
         }}
       >
         <Typography variant="h2" sx={{ fontWeight: 700, mb: 2 }}>
@@ -123,7 +123,7 @@ function HomePage() {
         </Typography>
       </Paper>
 
-      {/* Featured Products */}
+      
       <Box sx={{ mb: 6 }}>
         <Typography variant="h4" sx={{ fontWeight: 600, mb: 3 }}>
           Featured Collection
