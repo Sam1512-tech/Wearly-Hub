@@ -17,7 +17,7 @@ import {
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../utils/firebase';
 import { useNavigate } from 'react-router-dom';
-import SignupImage from '../assets/signup-hero.avif'; // You'll need to add this image
+import SignupImage from '../assets/signup-hero.avif';
 
 function SignupPage() {
   const [email, setEmail] = useState('');
@@ -99,7 +99,7 @@ function SignupPage() {
             </Box>
           </Grid>
 
-          {/* Form Section */}
+          
           <Grid item xs={12} md={6}>
             <Box sx={{ p: { xs: 3, md: 6 } }}>
               <Typography variant="h4" sx={{ fontWeight: 600, mb: 1 }}>
