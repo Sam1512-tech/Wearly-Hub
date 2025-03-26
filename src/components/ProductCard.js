@@ -27,7 +27,7 @@ function ProductCard({ product }) {
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: 'rgb(186, 185, 182)', // Main card background
+        backgroundColor: 'rgb(186, 185, 182)', 
         transition: 'transform 0.3s ease, box-shadow 0.3s ease',
         '&:hover': {
           transform: 'translateY(-5px)',
@@ -37,7 +37,7 @@ function ProductCard({ product }) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Favorite Button */}
+     
       <IconButton
         sx={{
           position: 'absolute',
@@ -58,7 +58,6 @@ function ProductCard({ product }) {
         )}
       </IconButton>
 
-      {/* Product Image - White background container */}
       <Box sx={{ 
         width: '100%',
         height: 240,
@@ -66,7 +65,7 @@ function ProductCard({ product }) {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#ffffff' // White background for image area
+        backgroundColor: '#ffffff' 
       }}>
         <CardMedia
           component="img"
@@ -85,12 +84,12 @@ function ProductCard({ product }) {
         />
       </Box>
 
-      {/* Product Content */}
+      
       <CardContent sx={{ 
         flexGrow: 1, 
         px: 2.5, 
         pt: 2.5,
-        backgroundColor: 'rgb(186, 185, 182)' // Matching main card color
+        backgroundColor: 'rgb(186, 185, 182)' 
       }}>
         <Chip
           label={product.category}
@@ -111,7 +110,7 @@ function ProductCard({ product }) {
             WebkitLineClamp: 2,
             WebkitBoxOrient: 'vertical',
             overflow: 'hidden',
-            color: '#000000' // Ensuring text is readable
+            color: '#000000' 
           }}
         >
           {product.title}
@@ -130,11 +129,11 @@ function ProductCard({ product }) {
         </Box>
       </CardContent>
 
-      {/* Add to Cart Button */}
+      
       <CardActions sx={{ 
         p: 2.5, 
         pt: 0,
-        backgroundColor: 'rgb(186, 185, 182)' // Matching main card color
+        backgroundColor: 'rgb(186, 185, 182)' 
       }}>
         <Button
           fullWidth
