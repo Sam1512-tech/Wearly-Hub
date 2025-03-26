@@ -62,7 +62,7 @@ function ProductList({
 
   return (
     <Box>
-      {/* Filter Controls */}
+      
       <Paper elevation={0} sx={{ 
         p: 3, 
         mb: 4, 
@@ -79,7 +79,7 @@ function ProductList({
             flex: '1 1 200px'
           }
         }}>
-          {/* Category Filter */}
+          
           <Box>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1.5 }}>
               <FilterAltIcon fontSize="small" color="primary" />
@@ -104,7 +104,7 @@ function ProductList({
             </FormControl>
           </Box>
 
-          {/* Price Range */}
+          
           <Box>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1.5 }}>
               <FilterAltIcon fontSize="small" color="primary" />
@@ -133,7 +133,7 @@ function ProductList({
             </Typography>
           </Box>
 
-          {/* Sort Options */}
+          
           <Box>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1.5 }}>
               <SortIcon fontSize="small" color="primary" />
@@ -157,7 +157,7 @@ function ProductList({
             </FormControl>
           </Box>
 
-          {/* Reset Button */}
+          
           <Box sx={{ 
             display: 'flex', 
             alignItems: 'flex-end',
@@ -184,7 +184,7 @@ function ProductList({
         </Box>
       </Paper>
 
-      {/* Products Grid */}
+    
       <Grid container spacing={4}>
         {products.map((product) => (
           <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>
