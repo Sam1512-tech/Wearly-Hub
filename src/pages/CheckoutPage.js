@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; // Added useState import
+import React, { useState } from 'react'; 
 import {
   Box,
   Typography,
@@ -39,7 +39,7 @@ function CheckoutPage() {
   };
 
   const handlePlaceOrder = () => {
-    // In a real app, you would send the order to your backend here
+  
     alert('Order placed successfully!');
     clearCart();
     navigate('/');
@@ -63,7 +63,7 @@ function CheckoutPage() {
           <Typography>
             {currentUser?.email}
             <br />
-            {/* In a real app, you would collect shipping address here */}
+           
             123 Main St, Anytown, USA
           </Typography>
         </Paper>
@@ -75,7 +75,7 @@ function CheckoutPage() {
             Payment Method
           </Typography>
           <Typography>
-            {/* In a real app, you would collect payment information here */}
+          
             Credit Card ending in ****4242
           </Typography>
         </Paper>
