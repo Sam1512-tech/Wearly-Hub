@@ -12,7 +12,7 @@ import {
   Badge,
   Chip,
   Stack,
-  Container  // Added this import
+  Container  
 } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
